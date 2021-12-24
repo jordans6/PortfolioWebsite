@@ -1,0 +1,89 @@
+@import "../../global.scss";
+
+.portfolio {
+    background-color: white;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    ul {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .container {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .item {
+            width: 660px;
+            height: 440px;
+            border-radius: 20px;
+            border: 1px solid rgb(240, 239, 239);
+            margin: 10px 20px;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            cursor: pointer;
+
+            h3 {
+                width: 100%;
+                position: absolute;
+                top: 45%;
+                left: 0;
+                font-size: 20px;
+                opacity: 0;
+                text-align: center;
+                color: white;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+                z-index: 1;
+            }
+
+            &:hover{
+                background-color: $mainColour;
+
+                h3 {
+                    opacity: 1;
+                }
+
+                img {
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+
+    .link {
+        margin-top: 50px;
+
+        .downLink {
+            width: 30px;
+            animation: arrowBlink 2.5s infinite;
+
+            @keyframes arrowBlink {
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
