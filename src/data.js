@@ -28,7 +28,7 @@ export const mobilePortfolio = [
 export const designPortfolio = [
     {
         id: 1,
-        title: "NW Hacks 2022 - Coming Soon",
+        title: "NW Hacks 2022",
         img: "assets/code.jpg",
         url: "https://jordans6.github.io/nwHacks-FrontEnd/",
     },
