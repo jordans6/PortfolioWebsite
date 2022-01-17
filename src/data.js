@@ -30,7 +30,7 @@ export const designPortfolio = [
         id: 1,
         title: "NW Hacks 2022 - Coming Soon",
         img: "assets/code.jpg",
-        url: "#",
+        url: "https://jordans6.github.io/nwHacks-FrontEnd/",
     },
 ]
 
